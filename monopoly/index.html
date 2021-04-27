@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+    <div id="container">
+      <div id="board"></div>
+      <span id="info">
+        <span id="infoCoa"></span>
+        <span id="infoNameText"><p id="infoName"></p></span>
+        <span id="infoOtherS"><p><b>Value:</b><p id="infoValue"></p></p></span>
+        <span id="infoOther"> <p><b>Dignity:</b><p id="infoDignity"></p></p> </span>
+        <span id="infoShareS">
+          <p><b>Shares:</b><p id="infoShares"></p></p>
+        </span>
+        <span id="infoOwnerText"><p><b>Owner:</b><p id="infoOwner"></p></p></span>
+        <button id="buyShare" onclick="Player.buyShare()">BUY SHARE</button>
+      </span>
+      <span id="console">
+      </span>
+    </main><selection>
+      <table id="entrepreneurs">
+        <caption><h3>ENTREPRENEURS</h3></caption>
+        <tr><th width='50%'>Name</th><th>Company</th><th title="Prudence">PRU</th><th title="Ambition">AMB</th><th title="Pride">PRI</th><th>Reputation</th><th>Tenure</th></tr>
+      </table>
+    </selection>
+    <selection>
+      <table id="companies">
+        <caption><h3>COMPANIES</h3></caption>
+        <tr><th width="31.95%">Name</th><th>Icon</th><th>Properties</th><th>Treasury</th><th>Total value</th></tr>
+      </table>
+    </selection>
+    <aside>
+      <table id="shares">
+        <caption><h3>SHARES</h3></caption>
+        <tr><th>Location</th><th>Company</th><th title="Current Value">C. value</th><th title="Original value">O. value</th><th>Options</th></tr>
+      </table>
+    </aside>
+    <aside>
+      <fieldset>
+        <legend><h3>PLAYER</h3></legend>
+      <table id="player">
+        <tr><th>Treasury:</th><td id="playerTreasury">a</td></tr>
+        <tr><th>Shares:</th><td id="playerShares"></td></tr>
+        <tr><th>Shares value:</th><td id="playerSharesValue"></td></tr>
+        <tr><th>Turn:</th><td id="playerTurn"></td></tr>
+        <tr><td colspan="2"><button id="turnButton" onclick="turn()">TURN</button></td></tr>
+        <tr><td colspan="2"> <button id="cashOutButton" onclick="Player.cashOut()">CASH OUT</button></td></tr>
+        <tr><td colspan="2"> <button id="reloadButton" onclick="reloadGame()">RELOAD</button></td></tr>
+      </table>
+      </fieldset
+    </aside>
+
+
+  </body>
+
+</html>
+
+<script src="code/Player.js"></script>
+<script src="code/Share.js"></script>
+<script src="code/Entrepreneur.js"></script>
+<script src="code/Pawn.js"></script>
+<script src="code/Company.js"></script>
+<script src="code/Board.js"></script>
+<script src="code/Property.js"></script>
+<script src="code/EventProperty.js"></script>
+<script src="code/CornerProperty.js"></script>
+<script src="code/UnitTest.js"></script>
+<script src="code/index.js"></script>

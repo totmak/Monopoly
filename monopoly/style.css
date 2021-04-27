@@ -1,0 +1,309 @@
+body {
+  height: 910px;
+  width:1700px;
+  display: block;
+  overflow: hidden;
+  background:black;
+  background-color: #000000;
+  background-image: url("icons/background1.png");
+}
+
+
+table {
+  background: white;
+}
+
+caption, fieldset {
+  background:green;
+  background-image: url("icons/background2.png");
+}
+
+h3 {
+  color:white;
+  text-shadow: 2px 2px black;
+}
+
+
+
+.northproperty, .westproperty, .eastproperty, .southproperty {
+  text-align:center;
+  vertical-align: middle;
+  font-size:8px;
+  color:white;
+  background:gray;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-shadow: 1px 1px black;
+}
+
+.northproperty, #event1 {
+  border:1px solid black;
+  display:block;
+  width:60px;
+  height:80px;
+  float:left;
+  position:absolute;
+  top:0;
+}
+
+.southproperty, #event3 {
+  border:1px solid black;
+  display:block;
+  width:60px;
+  height:80px;
+  float:right;
+  position:absolute;
+  top:502px;
+}
+
+.westproperty, #event4 {
+  border:1px solid black;
+  display:block;
+  width:80px;
+  height:60px;
+  position:absolute;
+}
+
+
+.eastproperty, #event2 {
+  border:1px solid black;
+  display:block;
+  width:80px;
+  height:60px;
+  position:absolute;
+  left:507px;
+}
+
+.eventProperty {
+  color:white;
+  border:1px solid black;
+  font-size:10px;
+  text-align: center;
+  background: white;
+  background-image: url('icons/event.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cornerProperty {
+  color:black;
+  border:1px solid black;
+  width:80px;
+  height:80px;
+  display:block;
+  background:white;
+  font-size:10px;
+  text-align: center;
+  position:absolute;
+  background-image: url('icons/corner.svg');
+}
+
+#board {
+  background:green;
+  width: 589px;
+  height: 584px;
+  top:0px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background-image: url('icons/board.svg'), url('icons/background3.png');
+}
+
+
+#prop1 { left:81px; } #prop2 { left:141px; } #prop3 { left:202px; } #prop4 { left:324px; } #prop5 { left:385px; } #prop6 { left:446px; } #prop7 { top: 81px; } #prop8 { top: 141px; } #prop9 { top: 201px; } #prop10 { top: 321px; } #prop11 { top: 381px; } #prop12 { top: 441px; } #prop13 { left:446px; } #prop14 { left:385px; } #prop15 { left:324px; } #prop16 { left:202px; } #prop17 { left:141px; } #prop18 { left:81px; } #prop24 { top: 81px; } #prop23 { top: 141px; } #prop22 { top: 201px; } #prop21 { top: 321px; } #prop20 { top: 381px; } #prop19 { top: 441px; }
+
+#event1 { left:263px; } #event2 { top:260px; } #event3 { left:263px; } #event4 { top:260px; }
+
+#corner1 { top:0; left: 0px; } #corner2 { top:0; left: 507px; transform: scaleX(-1); } #corner3 { top:502px; left: 507px; }  #corner4 { top:502px;    transform: scaleX(-1); }
+
+
+.pawn {
+  width:20px;
+  height:20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left:50px;
+  display:block;
+  position:absolute;
+}
+
+#pawn1 { background-image: url("icons/1.svg"); } #pawn2 { background-image: url("icons/2.svg"); } #pawn3 { background-image: url("icons/3.svg"); } #pawn4 { background-image: url("icons/4.svg"); }
+
+#turnButton, #reloadButton, #cashOutButton {
+  background:black;
+  color:white;
+  width:100%;
+  height:100%;
+}
+
+#info {
+  width: 589px;
+  background:black;
+  color: white;
+  height:90px;
+  display:block;
+  position: relative;
+}
+
+
+#infoCoa{
+  position: absolute;
+  left:5px;
+  top:40px;
+  width:30px;
+  height:30px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#info p {
+  float:left;
+}
+
+
+#console {
+  width: 589px;
+  background:#282828;
+  height:286px;
+  display:block;
+  position: relative;
+  overflow: scroll;
+}
+
+#console p {
+  margin: 0;
+  padding: 0;
+}
+
+.regular {
+  color:yellow;
+}
+
+.positive {
+  color:green;
+}
+
+.rejection {
+  color:orange;
+}
+
+.negative {
+  color:red;
+}
+
+#entrepreneurs {
+  display:block;
+
+  width:610px;
+  float:left;
+  position: relative;
+
+}
+
+#companies{
+  float:left;
+  position: relative;
+  width:500px;
+  display:block;
+  min-height:36px;
+}
+
+#companies td {
+  height:60px;
+}
+
+#player {
+  border: 1px solid black;
+  display:block;
+  position: relative;
+  float:left;
+  overflow: hidden;
+}
+
+#buyShare {
+  position: absolute;
+  left:50px;
+  top:50px;
+}
+
+#infoOwnerText{
+  top: 40px;
+  position: absolute;
+  left:250px;
+}
+
+#infoOther{
+  position: absolute;
+  left:340px;
+}
+
+#infoOtherS{
+  position: absolute;
+  left:180px;
+}
+
+#infoShareS{
+  position: absolute;
+  left:460px;
+}
+
+
+
+#shares {
+  overflow: scroll;
+  display: block;
+  height: 560px;
+  width:  500px;
+}
+
+#shares th {
+  padding: 5px;
+  width:100px;
+}
+
+
+#pic {
+  background:white;
+  height:70px;
+  width:130px;
+  left:450px;
+  top:10px;
+  position: absolute;
+}
+
+
+main, selection, side {
+  top:0;
+  float:left;
+  display: block;
+  position:relative;
+}
+
+selection {
+  height:400px;
+
+}
+
+
+
+table {
+  border-collapse: collapse;
+  float:left;
+  position: relative;
+}
+
+tr, th, td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 5px;
+}
+
+.dice {
+  font-size:50px;
+}
